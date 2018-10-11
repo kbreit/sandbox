@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-
 def is_update_required(original, proposed):
 	if isinstance(original, dict):
 		for key, value in original.items():
@@ -31,15 +30,22 @@ def is_update_required(original, proposed):
 			return False
 
 
+vegetables = ['tomatoes']
 hobbies = ['computers', 'cooking', 'gardening']
 hobbies2 = ['computers', 'cooking', 'gardening']
 
+address = {'house_number': 3002,
+		   'city': 'Elgin',
+		   }
+
 data = {'name': 'Kevin',
 		'hobbies': hobbies,
+		'address': address,
 		}
 
 data2 = {'name': 'Kevin',
 		'hobbies': hobbies2,
+		'address': address,
 		}
 
 original = [data]
